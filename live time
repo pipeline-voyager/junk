@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+while true; do
+    date | awk '{print $4}'
+done

@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+
+#@Carl : pipeline-voyager
+default_username="carl" #uname
+default_password="linux" #pass
+attempt=0 #attempt for logging in
+
+menu() {
+    placeholder=true 
+    while $placeholder; do #always true
+        echo -e "1. Continue\n2. Logout" #option
+        read -p "Option: " option
+        if [[ $option == "1" ]]; then
+            while $placeholder; do
+                echo -e "\n1. View profile\n2. Back"
+                read -p "Option: " cont
+                if [[ $cont == "1" ]]; then
+                    echo -e "Username: $default_username\nPassword: $default_password"
+                elif [[ $cont == "2" ]]; then
+                    echo -e "\nWelcome back, $default_username!"
+                    menu
+                else #option only 1 & 2.... false if other
+                    echo "Invalid!"
+                fi
+            done
+        elif [[ $option == "2" ]]; then
+            placeholder=false
+            #--------------------------
+            #loading effect
+            echo -n "Logging out"
+            for i in {1..3}; do 
+                sleep 1.5
+                echo -n "."
+            done    
+            #--------------------------
+            echo -e "\n\nSuccessfully Logged out!"
+        else
+            echo -e "Invalid!\n"
+        fi    
+    done
+}
+main() {
+    placeholder=true
+    while $placeholder; do
+        read -p "Username: " username
+        read -p "Password: " password
+        if [[ $username == $default_username && $password == $default_password ]]; then
+            placeholder=false
+            echo "Access granted!"
+            #--------------------------
+            #loading effect
+            echo -n "Logging in"
+            for i in {1..3}; do
+                sleep 1.5
+                echo -n "."
+            done
+            #--------------------------
+            echo -e "\n\nSuccessfully Logged in!"
+            echo -e "\nWelcome, $default_username"
+            menu
+        else
+            ((attempt++)) #attempt incrementation
+            if [[ $attempt -eq 3 ]]; then
+                echo -e "\nAccount locked out."
+                echo "Too many attempts."
+                break
+            else
+                #incorrect credentials message
+                echo "Invalid username or password. Try again."
+                echo -e "Attempts remaining: $attempt\n" #attempt counter
+            fi
+        fi
+    done
+}
+# |
+# |
+# |
+# v
+main 
