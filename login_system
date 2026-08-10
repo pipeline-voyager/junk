@@ -19,7 +19,7 @@ menu() {
                 elif [[ $cont == "2" ]]; then
                     echo -e "\nWelcome back, $default_username!"
                     menu
-                else #option 1 & 2 only.... false if other
+                else #option 1 & 2 only.... INVALID if other
                     echo "Invalid!"
                 fi
             done
