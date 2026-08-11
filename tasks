@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+tasks=()
+show_tasks() {
+    local count=1
+    echo -e "\n----- YOUR TASKS -----" 
+    for task in "${tasks[@]}"; do
+        echo "$count - $task"
+        ((count++))
+    done
+    echo
+}
+
+show_menu() {
+    local running=true
+    while $running; do
+        echo -e "1. Add Task\n2. Show Tasks\n3. Exit"
+        read -p ": " option
+        if [[ $option == "3" ]]; then
+            running=false
+        elif [[ $option == "1" ]]; then
+            read -p "Enter a task: " task
+            tasks+=("$task")
+        elif [[ $option == "2" ]]; then
+            show_tasks
+        fi
+    done
+}
+show_menu
