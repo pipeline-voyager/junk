@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 tasks=()
+has_task=false
 show_tasks() {
     local count=1
     echo -e "\n----- YOUR TASKS -----" 
@@ -21,8 +22,14 @@ show_menu() {
         elif [[ $option == "1" ]]; then
             read -p "Enter a task: " task
             tasks+=("$task")
+            has_task=true
+            echo -e "\nTask added\n"
         elif [[ $option == "2" ]]; then
-            show_tasks
+            if [[ $has_task == false ]]; then
+                echo -e "\nNo tasks yet!\n"
+            else
+                show_tasks
+            fi
         fi
     done
 }
