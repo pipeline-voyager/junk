@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+read -p "trace: " trace
+
+traceroute "$trace" | tee milked.txt
+
