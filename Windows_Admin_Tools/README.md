@@ -2,7 +2,7 @@
 
 A PowerShell-based terminal user interface for common Windows administration, diagnostics, networking, system information, user management, and repair tasks.
 
-![alt text](screenshots/SC1-2.png)
+![alt text](assets/SC1-2.png)
 
 <h2>Requirements</h2>
 
@@ -11,7 +11,7 @@ A PowerShell-based terminal user interface for common Windows administration, di
 
 <td align="center">
 
-<img src="screenshots/vecteezy_window-10-logo-png-window-10-icon-transparent-png_20975574.png" width="60">
+<img src="assets/vecteezy_window-10-logo-png-window-10-icon-transparent-png_20975574.png" width="60">
 
 <br>
 
@@ -21,7 +21,7 @@ Windows 10 or later
 
 <td align="center">
 
-<img src="screenshots/PowerShell_5.0_icon.png" width="60">
+<img src="assets/PowerShell_5.0_icon.png" width="60">
 
 <br>
 
@@ -31,7 +31,7 @@ PowerShell 5.1 or later
 
 <td align="center">
 
-<img src="screenshots/administrator.png" width="60">
+<img src="assets/administrator.png" width="60">
 
 <br>
 
@@ -62,7 +62,7 @@ Displays:
 * Firewall status
 * Current privilege level
 
-![alt text](screenshots/SC2-1.png)
+![alt text](assets/SC2-1.png)
 
 ### Network
 
@@ -79,13 +79,13 @@ Provides tools for:
 * ARP and network neighbor information
 * TCP and UDP connection inspection through Netstat
 
-![alt text](screenshots/SC3.png)
+![alt text](assets/SC3.png)
 
 The Netstat interface also supports filtering connections by port and refreshing results.
 
-![alt text](screenshots/image.png)
+![alt text](assets/image.png)
 
-![alt text](screenshots/SC4.png)
+![alt text](assets/SC4.png)
 
 ### Disk and Storage
 
@@ -99,7 +99,7 @@ Provides:
 * DISM `ScanHealth`
 * DISM `RestoreHealth`
 
-![alt text](screenshots/SC5.png)
+![alt text](assets/SC5.png)
 
 Administrative privileges are required for CHKDSK, SFC, and DISM operations.
 
@@ -114,7 +114,7 @@ Provides:
 * Windows Update settings shortcut
 * Windows component cleanup
 
-![alt text](screenshots/SC6.png)
+![alt text](assets/SC6.png)
 
 ### System
 
@@ -127,7 +127,7 @@ Provides:
 * Environment variables
 * Recent System event log errors
 
-![alt text](screenshots/SC7.png)
+![alt text](assets/SC7.png)
 
 ### User and Account
 
@@ -138,7 +138,7 @@ Provides:
 * Local group enumeration
 * Local user renaming
 
-![alt text](screenshots/SC8.png)
+![alt text](assets/SC8.png)
 
 Renaming a local user requires administrator privileges.
 
@@ -152,7 +152,7 @@ Provides common network repair operations:
 * Reset TCP/IP
 * Network reset recommendations
 
-![alt text](screenshots/SC9.png)
+![alt text](assets/SC9.png)
 
 Operations that can affect network connectivity require confirmation before execution.
 
@@ -163,7 +163,7 @@ Generates:
 * Network reports
 * System reports
 
-![alt text](screenshots/SC10-2.png)
+![alt text](assets/SC10-2.png)
 
 Network reports are saved to the current user's Desktop as:
 
