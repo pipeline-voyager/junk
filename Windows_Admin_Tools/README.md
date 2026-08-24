@@ -11,7 +11,7 @@ A PowerShell-based terminal user interface for common Windows administration, di
 
 <td align="center">
 
-<img src="assets/vecteezy_window-10-logo-png-window-10-icon-transparent-png_20975574.png" width="60">
+<img src="assets/windows.png" width="60">
 
 <br>
 
@@ -21,7 +21,7 @@ Windows 10 or later
 
 <td align="center">
 
-<img src="assets/PowerShell_5.0_icon.png" width="60">
+<img src="assets/powershell.png" width="60">
 
 <br>
 
